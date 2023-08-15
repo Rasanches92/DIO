@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Médica</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            min-height: 800px;
+        }
+        .menu {
+            width: 300px;
+            background-color: #c1c1c1;
+            color: #12275F;
+            padding: 20px;
+            box-shadow: inset;
+            height: auto;
+            box-shadow: 2px 0px 4px rgba(9, 9, 253, 0.916);
+        }
+        .menu h2{
+            font-size: 80px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+        }
+        .header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    
+        .content th,
+        .content td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .content th {
+        background-color: #f2f2f2;
+        }
+    
+        .content tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="funcionamento.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <img src="./img/cm.svg" alt="Logo">
+            </div>            
+            <main class="conteudo">
+                <table>
+                    <tr>
+                        <th>Serviços</th>
+                        <th>Segunda a Sexta</th>
+                        <th>Sábados</th>
+                        <th>Feriados</th>
+                    </tr>
+                    <tr>
+                        <td>Clínica Geral</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 18h</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
